@@ -1,5 +1,4 @@
 import day2
-#, solve2
 
 def test_password_constructor():
     password = day2.Password('1-3 a: abcde')
