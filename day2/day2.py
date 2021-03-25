@@ -23,7 +23,7 @@ def solver(input, validCheck):
     return len(p for p in passwords if validCheck(p))
 
 def solve1(input):
-    return solver(input, lambda p: p.isValid())
+    return solver(input, lambda p: p.is_valid())
 
 def solve2(input):
     return solver(input, lambda p: p.isReallyValid())
