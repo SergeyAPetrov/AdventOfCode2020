@@ -32,7 +32,7 @@ def solve2(input):
 
 
 class Graph:
-    nodes: Dict[str, Dict[str, int]]
+    nodes: Dict[str, Dict[str, int]]  # node -> outgoing edges
 
     def __init__(self, edges_list):
         self.nodes = {parent: {child: weight for child, weight in edges} for parent, edges in edges_list}
